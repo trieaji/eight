@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Blog</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <a href="/contact">Contact</a>
+        </div>
+    </nav>
+    <div class="blog">
+        {{#if isLogin}} {{!-- untuk privasi --}}
+        <div style="text-align: right; margin-right: 160px; margin-top: 50px">
+            <a href="/add-blog"
+                style="background-color: orangered; padding: 10px 20px; text-decoration:none; color: white; border-radius: 5px;">Add
+                Blog</a>
+        </div>
+        {{/if}} {{!-- untuk privasi --}}
+        <hr class="line">
+        <div id="contents" class="blog-list">
+        {{#each propertyBlog}}
+            <div class="blog-list-item">
+                <!-- disimpannya disini -->
+                <div class="blog-image">
+                    <img src="../assets/images/dumbways.png" alt="">
+                </div>
+                <div class="blog-content">
+                    {{#if isLogin}} {{!-- untuk privasi --}}
+                    <div class="btn-group">
+                        {{!-- <button class="btn-edit">Edit Post</button> --}}
+                        <a href="/edit/{{@index}}" class="btn-edit">Edit Post</a>
+                        <a href="/delete/{{@index}}" class="btn-post">Delete Blog</a>
+                    </div>
+                    {{/if}} {{!-- untuk privasi --}}
+                    <h1>
+                        <a href="/blog-detail/{{@index}}" target="_blank">
+                            {{this.Tittle}}
+                        </a>
+                    </h1>
+                    <div class="detail-blog-content">
+                        {{this.postAt}} | {{this.Author}}
+                    </div>
+                    <p>
+                        {{!-- Ketimpangan sumber daya manusia (SDM) di sektor digital masih menjadi isu yang belum
+                        terpecahkan. Berdasarkan penelitian ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+                        meningkat dua kali lipat dalam satu dekade terakhir.Khusus di sektor teknologi yang berkembang
+                        pesat, menurut Kemendikbudristek, Indonesia kekurangan sembilan juta pekerja teknologi hingga
+                        tahun 2030. Hal itu berarti Indonesia memerlukan sekitar 600 ribu SDM digital yang memasuki
+                        pasar setiap tahunnya. Karena itu, perlu disiapkan SDM digital, khususnya yang paham dunia
+                        pengkodingan. --}}
+                        {{this.Content}}
+                    </p>
+                </div>
+
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+    <!-- content -->
+
+    </div>
+    <!-- <a href="blog-detail.html"><button class="btn-edit">Edit Post</button></a>
+    <button class="btn-edit">Edit Post</button>
+                <button class="btn-post">Post Blog</button> -->
+
+    {{!--
+    <script src="blog.js"></script> --}}
+</body>
+
+</html>

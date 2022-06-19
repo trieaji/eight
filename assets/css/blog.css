@@ -1,0 +1,81 @@
+.blog-form {
+    display: flex;
+    height: 93vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* margin adalah jarak antara luar */
+/* padding adalah jarak antara dalam */
+.blog-form {
+    padding: 90px;
+    margin: 50px;
+}
+
+img {
+    width: 170px;
+    margin:  7px 20px;
+}
+
+div .blog-list-item {
+    border: 30px solid white;
+    float: left;
+    margin: 5px;
+}
+
+p {
+    padding: 10px;
+    align-items: left;
+}
+
+i.fa-brands.fa-node {
+    padding: 10px;
+}
+
+i.fa-brands.fa-react {
+    padding: 10px;
+}
+
+i.fa-brands.fa-github {
+    padding: 10px;
+}
+
+button.btn-edit {
+    background:#2C97DF;
+  color:white;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #2A80B9;
+  padding:10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-size:11pt;
+}
+
+button.btn-post {
+    background:#2C97DF;
+  color:white;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:5px solid #2A80B9;
+  padding:10px 20px;
+  text-decoration:none;
+  font-family:sans-serif;
+  font-size:11pt;
+}
+
+
+
+input#input-nodejs {
+    margin: 0px 0px 0px;
+}
+
+input#input-nodejs {
+    margin: 0px 0px 0px;
+}
+
+input#input-js {
+    margin: 0px 0px 0px;
+}

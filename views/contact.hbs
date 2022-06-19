@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
+    <title>Form Contact</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/blog">Blog</a>
+                </li>
+            </ul>    
+        </div>
+        
+            <div class="nav-right">
+                <a href="/contact">Contact</a>    
+            </div>
+    </nav>
+
+    
+    <div class="container-form">
+        <form>
+            <div>
+                <label for="input-name">Name</label>
+                <input type="text" id="input-name" class="inputname">
+            </div>
+    
+            <div>
+                <label for="input-email">Email</label>
+                <input type="email" id="input-email" class="inputemail">
+            </div>
+    
+            <div>
+                <label for="input-phone">Phone</label>
+                <input type="number" id="input-phone" class="inputphone">
+            </div>
+    
+            <div>
+                <label for="input-subject">Subject</label>
+                <select id="input-subject" class="inputsubject">
+                    <option>Frontend</option>
+                    <option>Backend</option>
+                    <option>Fullstack</option>
+                </select>
+            </div>
+    
+            <div>
+                <label for="input-message">Your Message</label>
+                <textarea id="input-message" class="inputmessage"></textarea>
+            </div>
+    
+            <button class="button submit-form" id="btn-form">Submit</button>
+        </form>
+    </div>
+    <script src="../assets/js/form.js"></script>
+</body>
+</html>

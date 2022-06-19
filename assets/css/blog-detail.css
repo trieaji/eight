@@ -1,0 +1,23 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.judul {
+    text-align: center;
+    color: crimson;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+}
+
+.img {
+    text-align: right;
+    height: 200px; /*Untuk tinggi*/
+	width: 200px; /*Untuk lebar*/
+	margin: 5px;
+    padding: 20px;
+    float: left;
+
+}
+

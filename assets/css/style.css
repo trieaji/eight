@@ -1,0 +1,127 @@
+/* *, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+} */
+
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: gray;
+    display: flex;
+    height: 10vh;
+}
+
+.image img {
+    width: 60px;
+    height: 60px;
+    /* margin:  7px 20px; */
+}
+
+nav .nav-left {
+    display: flex;
+    padding-left: 100px;
+    flex: 50%;
+    background-color: gray
+    
+}
+
+nav .nav-left li {
+    display: inline;
+}
+
+nav .nav-left li {
+    display: inline;
+}
+
+nav .nav-left ul {
+    display: flex;
+    align-items: center; 
+}
+
+nav .nav-left ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 170px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    align-items: center;
+    font-size: 150%;
+}
+
+nav .nav-right {
+    display: flex;
+    flex: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 100px;
+}
+
+nav .nav-right a {
+    background-color: orange;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+} 
+
+.container {
+    display: flex;
+    border-radius: 5px;
+    
+}
+
+.left {
+    background-color: lightgray; 
+    flex: 30%;
+}
+
+.right {
+    background-color: lightgray; 
+    flex: 70%;
+    padding-left: 50px;
+}
+
+.right p {
+    color: blueviolet;
+}
+
+.skill-container {
+    width: 50px;
+    display: flex;
+}
+
+.skill-container div {
+    flex: 1;
+    padding: 10px;
+}
+
+.skill-container img {
+    width: 50px;
+}
+
+.social-media {
+    font-size: 30px;
+}
+
+/* .social-media i {
+    margin-right: 0px;
+    text-align: left;
+} */
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        background-color: yellowgreen;
+        flex-direction: column;
+    }
+  }
